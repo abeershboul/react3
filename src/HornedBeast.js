@@ -25,6 +25,7 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
+      
       <Col>
       <Card style={{ width: "18rem" }}>
         <Card.Body>
@@ -36,8 +37,10 @@ class HornedBeast extends React.Component {
           />
           <Card.Text>{this.props.description}</Card.Text>
           <Card.Text>Votes: {this.state.votes}</Card.Text>
-          <Button variant="primary" onClick={this.seeMe}>See Me</Button>
-          <Button variant="warning" onClick={this.voting}>Vote </Button>
+          <Card.Text>Number of horns: {this.props.horns}</Card.Text>
+
+          <Button variant="primary" onClick={this.seeMe}>See Me!</Button>
+          <Button variant="warning" onClick={this.voting}>Vote for me!</Button>
 
         </Card.Body>
       </Card>
